@@ -1,0 +1,106 @@
+*{
+    /*Removes default padding and margin from all elements.*/
+    padding: 0;
+    margin: 0;
+    /*Makes sure that padding and border are included in the element's total width and height.*/
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    background-color: #43a047;
+}
+
+.wrapper{
+    background-color: #fff;
+    /*viewport's minimum width*/
+    width: 80vmin;
+    /*positioned in the center of the screen*/
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    /*padding around its content*/
+    padding: 40px 20px;
+    /*rounded corners*/
+    border-radius: 8px;
+}
+
+label{
+    /*Sets labels to be displayed as block elements*/
+    display: block;
+}
+
+span{
+    /*Positions spans relatively and adjusts the font size and vertical placement slightly*/
+    position: relative;
+    font-size: 22px;
+    bottom: -1px;
+}
+
+.opt-wrapper{
+    display:flex;
+    /*arranging its items with space between them*/
+    justify-content: space-between;
+    /*adding a bottom margin*/
+    margin-bottom: 20px;
+    /*setting a gap between its children elements*/
+    gap: 10px;
+}
+
+button{
+    background-color: #43a047;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+}
+
+/* Styles for input of type color */
+input[type="color"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 70px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Firefox-specific styles for input of type color */
+input[type="color"]::-moz-color-swatch{
+    border-radius: 8px;
+    border: 4px solid #000;
+}
+
+.gridCol{
+    height: 1em;
+    width: 1em;
+    border: 1px solid #ddd;
+}
+
+.gridRow{
+    display: flex;
+}
+
+/*Media Query
+    Adjusts the height and width of .gridCol elements when the screen width is 
+    less than or equal to 768 pixels, applying responsive design for smaller screens.*/
+@media only screen and (max-width: 768px){
+    .gridCol{
+        height: 0.8em;
+        width: 0.8em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
