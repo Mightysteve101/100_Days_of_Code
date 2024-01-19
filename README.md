@@ -1,0 +1,1 @@
+I will be following a youtube channel that will help me better understand Javascript. I will practice with getting in the habit of coding everyday, which I have definitely lacked in. I will start out with at least commiting once a day. Just like every other skill that have learned, it start with consistency!
