@@ -28,7 +28,7 @@ const initializer = () =>{
     fontList.map((value) =>{
         let option = document.createElement("option");
         option.value = value;
-        option.innerHTML = value;
+        option.innerHTML = value;ex
         fontName.appendChild(option);
     });
 
