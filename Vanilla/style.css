@@ -35,3 +35,8 @@ body{
     padding: 25px;
     align-items: center;
 }
+.square{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
