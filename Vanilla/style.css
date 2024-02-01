@@ -22,13 +22,13 @@ a{
 #top-nav-bar{
     padding: 25px;
     display: flex;
-    justify-content: space-between;
 }
 
 #top-nav-bar ul{
     display: flex;
     list-style-type: none;
     font-size: 1rem;
+    margin-left: 1rem;
 }
 
 #top-nav-bar li a{
@@ -42,7 +42,7 @@ a{
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    margin-left: 1rem;
+    margin-left: 5rem;
 }
 
 #section-2{
@@ -71,7 +71,7 @@ a{
     width: 550px;
     height: 500px;
     background-color: white;
-    bottom: 140px;
+    bottom: 175px;
     left: 105px;
 }
 
