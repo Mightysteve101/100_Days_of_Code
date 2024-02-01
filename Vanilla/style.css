@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -8,36 +9,45 @@ body{
     background-color: black;
     font-family: Arial, sans-serif;
     color: white;
-    border: 2px solid blue;
+}
+
+h1, 
+p,
+a{
+    font-family: 'DM Sans', sans-serif;
 }
 
 /**Section Styles**/
 
 #top-nav-bar{
     padding: 25px;
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 #top-nav-bar ul{
     display: flex;
-    margin: 10px;
-    padding: 10px;
     list-style-type: none;
+    font-size: 1rem;
 }
 
-#top-nav-bar li{
-    padding: 10px; 
-    margin-inline-end: 1rem;
-    border: solid red;
+#top-nav-bar li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 1rem;
 }
 
 #section-2{
     display: flex;
     justify-content: space-between;
-    border: 2px solid #0000ff;
     padding: 25px;
     align-items: center;
 }
@@ -61,8 +71,8 @@ body{
     width: 550px;
     height: 500px;
     background-color: white;
-    bottom: 125px;
-    left: 95px;
+    bottom: 140px;
+    left: 105px;
 }
 
 .column-right{
@@ -70,12 +80,21 @@ body{
     padding: 25px 100px 25px 25px;
 }
 
-footer{
-    text-align: center;
-    padding: 25px;
+.section-1-h1{
+    font-size: 2.5rem;
 }
 
-footer a{
+.column-right{
+    font-size: 1rem;
+}
+
+footer{
+    text-align: center;
+    padding-top: 75px;
+}
+
+footer p a{
     text-decoration: none;
     color: inherit;
+    font-size: 1rem;
 }
