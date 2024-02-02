@@ -16,6 +16,12 @@ p,
 a{
     font-family: 'DM Sans', sans-serif;
 }
+h1{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 1rem;
+}
 
 /**Section Styles**/
 
@@ -82,12 +88,10 @@ a{
     font-size: 1rem;
 }
 
-.section-1-h1{
-    font-size: 2.5rem;
-}
-
 #section-3{
     display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 footer{
