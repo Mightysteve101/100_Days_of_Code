@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: #100B09;
     font-family: Arial, sans-serif;
     color: white;
 }
@@ -18,17 +18,18 @@ a{
 }
 h1{
     font-size: 2.5rem;
+    text-align: center;
 }
 p{
     font-size: 1rem;
+    text-align: center;
 }
+
 
 /**Section Styles**/
 
 .section{
     padding: 25px 100px;
-    border: 2px solid red;
-
 }
 
 #top-nav-bar ul{
@@ -92,6 +93,17 @@ p{
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: #32241E;
+    margin-top: 29px; /**197px aligns with white box, so i subtracted 197-168 to make space between section more consistent**/
+}
+
+.section-3-p{
+    padding: 25px 150px;
+
+}
+
+#section-4{
+    background-color: #100B09;
 }
 
 footer{
