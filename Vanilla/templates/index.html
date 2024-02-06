@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!--Flask generates the correct URL for the static file, regardless of the deployment configuration.-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Late Night Jam Sessions</title>
     
 </head>
@@ -11,7 +12,7 @@
     <!--Navigation Bar-->
     <div id="top-nav-bar" class="section">
         <ul>
-            <img src="images/guitar-logo.png" alt="guitar-logo" class="logo" width="60px" height="75px">
+            <img src="../static/images/guitar-logo.png" alt="guitar-logo" class="logo" width="60px" height="75px">
             <li><a href="index.html" class="ga-nav">Home</a></li>
             <li><a href="portfolio.html" class="ga-nav">Portfolio</a></li>
         </ul>
@@ -20,7 +21,7 @@
     <!--Section 2 Contains Main heading and description-->
     <div id="section-2" class="section">
         <div class="column-left">
-            <img src="images/guitar-lounge.png" alt="guitar-lounge">
+            <img src="../static/images/guitar-lounge.png" alt="guitar-lounge">
             <div class="white-block"></div>
         </div>
         <div class="column-right">
@@ -44,6 +45,13 @@
                 <!--You need to crop the video-->
                 <source src="videos/bleed-the-kid-laroi.mp4" type="video/mp4">
             </video>
+
+            <ul>
+                {% for file in files %}
+                    <li>{{ file }}</li>
+                {% endfor %}
+            </ul>
+            
         </div>
     </div>
 
