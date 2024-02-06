@@ -1,0 +1,3 @@
+import dropbox
+dbx = dropbox.Dropbox('sl.BvG_9ytyTzoX66W1p9Q4ctbLb6UWzuiYZ_H6wx4YzDTesQ6Xlqw9tot6h5_-Ptsa-rTNINS_LQ5-UWRR80Eu4Eu1Z-98qvV_sOFevON-Vi5hnFe9B2ljsz9kA8rOabpFvZb4w-qzfDEIGT5QBLng')
+dbx.users_get_current_account()
