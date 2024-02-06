@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Grabs the video and places it in index.html
-    video_path = '/static/videos/bleed_the_kid_laroi.mp4'
+    video_path = '/static/videos/bleed_the_kid_laroi'
     return render_template('index.html', video_path=video_path)
 
 if __name__ == '__main__':
