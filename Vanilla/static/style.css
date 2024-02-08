@@ -115,3 +115,13 @@ footer p a{
     color: inherit;
     font-size: 1rem;
 }
+
+.square{
+    position: absolute;
+    z-index: 1;
+    width: 550px;
+    height: 500px;
+    background-color: white;
+    bottom: 168px;
+    left: 100px;
+}
