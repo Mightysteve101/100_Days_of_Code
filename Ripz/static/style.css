@@ -4,12 +4,23 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+/**Section Styling**/
 nav {
     background-color: #ffffff;
     color: #08090A;
     padding: 10px 0;
 }
 
+section{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px auto;
+}
+
+
+/**Navigation**/
 .top_nav_container{
     width: 90%;
     margin: 0 auto;
@@ -17,14 +28,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 25px;
-}
-
-.container{
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px auto;
 }
 
 .logo a {
@@ -49,6 +52,7 @@ nav {
     font-size: 1rem;
 }
 
+/**Hero content just an image with text on top**/
 .hero_section{
     background-image: url(../static/images/oregon_mountains.jpg);
 
@@ -68,22 +72,49 @@ nav {
     margin: 0 auto;
 }
 
-
+/**Product Content set to 3 columns**/
 .product_section{
+    text-align: center;
     background-color: #ffffff;
-    max-width: 90%;
 }
 
-/* columns */
-.product_section > * {
-    display: flex;
-    justify-content: center;
-    width:calc(100% / 3);
-    padding:1rem;
+.responsive_product_section{
+    flex-wrap: wrap;
+}
+
+.product_content{
+    padding: 25px;
+    column-count: 3;
+    column-gap: 10rem;
+}
+
+.product_content > img {
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.responsive_product_content > img {
+    width: 100%;
+    padding: 1rem;
 }
 
 .product_content img{
     border-radius: 100%;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
+
+.product_section:first-child{
+    padding: 25px;
+}
+
+@media (min-width: 768px){
+    .responsive_product_content > img {
+        width: calc(100%/3);
+    }
+}
+
+
+
+
+/**About Section**/
