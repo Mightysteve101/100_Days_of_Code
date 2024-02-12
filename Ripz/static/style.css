@@ -78,10 +78,6 @@ section{
     background-color: #ffffff;
 }
 
-.responsive_product_section{
-    flex-wrap: wrap;
-}
-
 .product_content{
     padding: 25px;
     column-count: 3;
@@ -91,11 +87,6 @@ section{
 .product_content > img {
     width: calc(100% / 3);
     text-align: center;
-}
-
-.responsive_product_content > img {
-    width: 100%;
-    padding: 1rem;
 }
 
 .product_content img{
@@ -108,13 +99,16 @@ section{
     padding: 25px;
 }
 
-@media (min-width: 768px){
-    .responsive_product_content > img {
-        width: calc(100%/3);
-    }
+.about_section{
+    text-align: center;
+    background-color: #F5F5F5;
 }
 
-
+.about_content > *{
+    width: 50%;
+    column-count: 2;
+    column-gap: 10rem;
+}
 
 
 /**About Section**/
